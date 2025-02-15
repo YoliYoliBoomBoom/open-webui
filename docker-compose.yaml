@@ -7,21 +7,8 @@ services:
     restart: always
     ports:
       - "9099:9099"
-    # environment:
-    #   - PIPELINES_URLS=https://github.com/open-webui/pipelines/blob/main/examples/pipelines/providers/azure_openai_pipeline.py
     volumes:
       - pipelines:/app/pipelines
-
-  pipelines2:
-    image: ghcr.io/open-webui/pipelines:main
-    container_name: pipelines2
-    restart: always
-    ports:
-      - "9098:9099"
-    # environment:
-    #   - PIPELINES_URLS=https://github.com/open-webui/pipelines/blob/main/examples/pipelines/providers/azure_openai_pipeline.py
-    volumes:
-      - pipelines2:/app/pipelines
 
   open-webui:
     image: ghcr.io/open-webui/open-webui:main
@@ -37,4 +24,3 @@ services:
 volumes:
   pipelines:
   open-webui:
-  pipelines2:
