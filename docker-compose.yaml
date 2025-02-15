@@ -5,8 +5,8 @@ services:
     image: ghcr.io/open-webui/pipelines:main
     container_name: pipelines
     restart: always
-    ports:
-      - "9099:9099"
+    # ports:
+    #   - "9099:9099"
     volumes:
       - pipelines:/app/pipelines
 
