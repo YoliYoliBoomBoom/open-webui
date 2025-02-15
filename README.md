@@ -10,7 +10,7 @@ To add external models such as Azure OpenAI models:
 Upload the pipeline.py file.
 To add several models from the same external API, upload another pipeline.py with a different filename.
 
-Also, add a .env file with the following environment variables:
+Also, add a .env file with the following environment variables: <br>
 AZURE_OPENAI_ENDPOINT='you azure openai endpoint' <br>
 AZURE_OPENAI_API_KEY='your azure openai api key' <br>
 AZURE_OPENAI_API_VERSION='your azure openai api version' <br>
