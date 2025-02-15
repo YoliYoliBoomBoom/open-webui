@@ -21,6 +21,12 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
+  ollama:
+    image: ollama/ollama
+    volumes:
+      - ollama:/root/.ollama
+
 volumes:
   pipelines:
   open-webui:
+  ollama:
